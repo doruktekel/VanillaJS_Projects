@@ -1,0 +1,40 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100vh;
+  position: relative;
+}
+span {
+  background: url("https://img.freepik.com/free-photo/lovely-pet-portrait-isolated_23-2149192347.jpg?w=740&t=st=1699730728~exp=1699731328~hmac=2f9c9fa7b189762fd008e6f5b7f0f3f385de2770d7b394f52ebeabbfbebb3bd9")
+    no-repeat center/cover;
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+  animation: animasyon 6s linear;
+  overflow: hidden;
+}
+
+@keyframes animasyon {
+  0% {
+    transform: translate(-50%, -50%);
+    opacity: 1;
+    filter: hue-rotate(0);
+  }
+  100% {
+    transform: translate(-50%, -5000%);
+    opacity: 0;
+    filter: hue-rotate(720deg);
+  }
+}

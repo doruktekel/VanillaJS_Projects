@@ -1,0 +1,32 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 90%;
+  margin: 10px auto;
+}
+.img-container {
+  margin: 20px;
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+img {
+  border-radius: 10px;
+  background-color: aliceblue;
+}
+.btn {
+  padding: 10px 20px;
+  font-size: 14 px;
+  border: none;
+  outline: none;
+  background-color: bisque;
+  border-radius: 20px;
+}

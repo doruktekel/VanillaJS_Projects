@@ -1,0 +1,20 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+.bg-image {
+  width: 100%;
+  height: 100vh;
+  background: url("https://images.pexels.com/photos/4599050/pexels-photo-4599050.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1")
+    no-repeat fixed center/cover;
+}
+.container {
+  padding: 10px 20px;
+  text-align: center;
+}
+p {
+  margin: 20px 0;
+  font-size: 30px;
+}
