@@ -1,0 +1,78 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  display: grid;
+  place-items: center;
+  width: 100%;
+  overflow: hidden;
+  height: 100dvh;
+  background: rgb(17, 0, 36);
+  background: linear-gradient(
+    139deg,
+    rgba(17, 0, 36, 1) 0%,
+    rgba(255, 0, 206, 0.6446953781512605) 38%,
+    rgba(0, 212, 255, 0.8071603641456583) 80%
+  );
+  text-transform: capitalize;
+}
+img {
+  height: 100px;
+  width: 100px;
+  object-fit: cover;
+}
+.container {
+  width: 600px;
+  padding: 30px;
+  background-color: antiquewhite;
+  border-radius: 20px;
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.feedbacks {
+  display: flex;
+  gap: 30px;
+  margin: 20px 0;
+  cursor: pointer;
+}
+.feedbacks-child.active {
+  background-color: blueviolet;
+  color: antiquewhite;
+  padding: 5px;
+  border-radius: 5px;
+}
+p {
+  font-size: 20px;
+}
+.btn {
+  padding: 10px 20px;
+  background-color: blueviolet;
+  color: antiquewhite;
+  border: none;
+  outline: none;
+  font-size: 16px;
+  text-transform: capitalize;
+  border-radius: 5px;
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.5);
+  transition: all 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+.btn:hover {
+  color: blueviolet;
+  background-color: beige;
+  cursor: pointer;
+}
+
+.textfeed {
+  margin: 20px;
+  background-color: blueviolet;
+  color: antiquewhite;
+  padding: 5px;
+  border-radius: 5px;
+}
