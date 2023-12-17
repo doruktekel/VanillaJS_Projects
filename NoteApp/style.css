@@ -1,0 +1,76 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  text-transform: capitalize;
+  width: 80%;
+  height: 100dvh;
+  margin: 10px auto;
+  background: linear-gradient(
+      to right top,
+      #051937,
+      #004d7a,
+      #008793,
+      #00bf72,
+      #a8eb12
+    )
+    fixed no-repeat center/cover;
+  color: #fff;
+}
+.box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+h1 {
+  font-size: 100px;
+}
+p {
+  font-size: 50px;
+  margin-bottom: 20px;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+.text {
+  resize: none;
+  width: 300px;
+  height: 200px;
+  border: 1px solid rgba(255, 255, 255, 0.8);
+  background-color: rgba(255, 255, 255, 0.2);
+  padding: 10px;
+  color: #fff;
+  font-size: 20px;
+  box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.5);
+}
+
+.text::placeholder {
+  color: #fff;
+}
+.btn {
+  width: 300px;
+  height: 200px;
+  font-size: 100px;
+  border: 1px solid rgba(255, 255, 255, 0.8);
+  background-color: rgba(255, 255, 255, 0.2);
+  color: rgba(255, 255, 255, 0.2);
+  box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.5);
+}
+
+.btn:hover,
+.btn:focus {
+  background-color: rgba(255, 255, 255, 0.5);
+  color: rgba(255, 255, 255, 0.7);
+  cursor: pointer;
+}
