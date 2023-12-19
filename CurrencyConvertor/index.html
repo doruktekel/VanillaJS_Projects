@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Crypto Cuurency</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="./app.js" defer></script>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Currency Convertor</h1>
+      <div class="currency-container">
+        <div class="currency1">
+          <select id="currency-first">
+            <option value="AUD">AUD</option>
+            <option value="CAD">CAD</option>
+            <option value="EUR">EUR</option>
+            <option value="GBP">GBP</option>
+            <option value="TRY">TRY</option>
+            <option value="JPY">JPY</option>
+            <option value="USD" selected>USD</option>
+          </select>
+          <input type="number" name="" id="worth-first" min="0" value="1" />
+        </div>
+        <div class="currency2">
+          <select id="currency-second">
+            <option value="AUD">AUD</option>
+            <option value="CAD">CAD</option>
+            <option value="EUR">EUR</option>
+            <option value="GBP">GBP</option>
+            <option value="TRY" selected>TRY</option>
+            <option value="JPY">JPY</option>
+            <option value="USD">USD</option>
+          </select>
+          <input type="number" name="" id="worth-second" disabled />
+        </div>
+      </div>
+
+      <p class="one"></p>
+    </div>
+  </body>
+</html>
