@@ -1,0 +1,53 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  display: grid;
+  place-items: center;
+  height: 100dvh;
+  background-color: antiquewhite;
+  font-family: "Inter", sans-serif;
+}
+.container {
+  background-color: blueviolet;
+  color: aliceblue;
+  text-align: center;
+  padding: 50px;
+  border-top-left-radius: 50px;
+  border-bottom-right-radius: 50px;
+  box-shadow: 2px 5px 5px rgba(0, 0, 0, 0.5);
+  width: 600px;
+}
+.timer {
+  font-size: 100px;
+  margin: 0 auto;
+}
+.buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  margin-top: 20px;
+}
+button {
+  padding: 10px 20px;
+  background-color: #fff;
+  color: blueviolet;
+  font-size: 20px;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  transition: all 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+button:hover {
+  cursor: pointer;
+  box-shadow: 2px 5px 5px rgba(0, 0, 0, 0.5);
+  background-color: brown;
+  color: #fff;
+}
+button[disabled] {
+  opacity: 0.5;
+}
