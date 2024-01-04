@@ -1,0 +1,35 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  text-transform: capitalize;
+  background: url("https://images.unsplash.com/photo-1622447036013-a7e7367759c3?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D")
+    no-repeat center/cover;
+  width: 100%;
+  height: 100dvh;
+  display: grid;
+  place-items: center;
+}
+.container {
+  background-color: rgba(255, 255, 255, 0.7);
+  padding: 50px;
+  border-radius: 20px;
+  box-shadow: 10px 20px 20px rgba(0, 0, 0, 0.5);
+  color: brown;
+}
+h2 {
+  font-size: 50px;
+}
+.clock {
+  display: flex;
+  align-items: flex-end;
+  gap: 20px;
+  justify-content: center;
+  margin-top: 20px;
+}
