@@ -24,7 +24,8 @@ body {
   color: brown;
 }
 h2 {
-  font-size: 50px;
+  font-size: 80px;
+  text-align: center;
 }
 .clock {
   display: flex;
@@ -32,4 +33,30 @@ h2 {
   gap: 20px;
   justify-content: center;
   margin-top: 20px;
+}
+.hours,
+.minutes,
+.seconds {
+  width: 180px;
+  text-align: center;
+}
+h1 {
+  padding: 20px;
+  background-color: bisque;
+  font-size: 100px;
+}
+label {
+  background-color: cadetblue;
+  color: aliceblue;
+  display: block;
+  text-align: center;
+  padding: 10px 0;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  font-size: 30px;
+}
+.ampm {
+  border-bottom-left-radius: 20;
+  border-bottom-right-radius: 20;
+  padding: 10px;
 }
