@@ -1,0 +1,96 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  display: grid;
+  place-items: center;
+  font-family: "Ubuntu", sans-serif;
+  background-color: antiquewhite;
+  height: 100dvh;
+}
+.watch {
+  width: 600px;
+  height: 600px;
+  background-color: lightgrey;
+  border: 5px solid grey;
+  border-radius: 50%;
+  position: relative;
+}
+img {
+  width: 80px;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%);
+  top: 20%;
+  z-index: 2;
+}
+.numbers div {
+  position: absolute;
+  z-index: 2;
+  font-size: 50px;
+}
+.twelve {
+  left: 50%;
+  transform: translate(-50%);
+  top: 10px;
+}
+.three {
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.six {
+  left: 50%;
+  transform: translate(-50%);
+  bottom: 10px;
+}
+.nine {
+  left: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.selectors {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+.selectors::before {
+  content: " ";
+  width: 50px;
+  height: 50px;
+  background-color: #028d5c;
+  border-radius: 50%;
+  z-index: 4;
+}
+.selectors div {
+  position: absolute;
+  z-index: 3;
+  background-color: #fff;
+  width: 10px;
+  height: 220px;
+  border-top-right-radius: 100%;
+  border-top-left-radius: 100%;
+  transform-origin: bottom center;
+  bottom: 50%;
+}
+
+.selectors .hour {
+  height: 150px;
+  width: 20px;
+  transform: rotate(25deg);
+}
+.selectors .minute {
+  width: 10px;
+  height: 220px;
+  transform: rotate(85deg);
+}
+.selectors .second {
+  width: 5px;
+  background-color: burlywood;
+  transform: rotate(185deg);
+}
