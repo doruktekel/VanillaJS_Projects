@@ -1,0 +1,64 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  display: grid;
+  place-items: center;
+  height: 100dvh;
+  background-color: bisque;
+  text-transform: capitalize;
+  font-family: "Roboto", sans-serif;
+}
+.calendar {
+  width: 600px;
+}
+.header {
+  background-color: aqua;
+  width: 100%;
+  padding: 20px;
+  text-align: center;
+  border-top-right-radius: 20px;
+  border-top-left-radius: 20px;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 20px 10px;
+  background-color: black;
+  color: #fff;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+.line {
+  display: flex;
+  flex-wrap: wrap;
+}
+.line h2 {
+  flex-basis: 14%;
+  text-align: center;
+}
+.days {
+  display: flex;
+  flex-wrap: wrap;
+}
+.days div {
+  flex-basis: 14%;
+  padding: 10px;
+  text-align: center;
+  border: 1px solid black;
+  transition: all 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+.days div:hover:not(.unseen) {
+  cursor: pointer;
+  border: 1px solid #fff;
+}
+
+.days .today {
+  background-color: aqua;
+}
