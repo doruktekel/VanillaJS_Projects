@@ -1,0 +1,34 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  display: grid;
+  place-items: center;
+  height: 100dvh;
+  background-color: black;
+  color: #fff;
+}
+.container {
+  /* display: flex;
+  flex-direction: column;
+  justify-content: center; */
+  text-align: center;
+  width: 500px;
+  position: relative;
+}
+.back {
+  background-color: #fff;
+  height: 8px;
+  position: absolute;
+  width: 100%;
+  border-radius: 5px;
+}
+.front {
+  background-color: orange;
+  height: 8px;
+  position: absolute;
+  border-radius: 5px;
+  width: 60%;
+}
