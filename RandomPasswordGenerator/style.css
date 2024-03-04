@@ -1,0 +1,81 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  display: grid;
+  place-items: center;
+  height: 100dvh;
+  text-transform: capitalize;
+}
+.password-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  justify-content: center;
+  min-width: 500px;
+  min-height: 200px;
+  padding: 20px;
+  background-color: antiquewhite;
+  border-radius: 10px;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+}
+h1 {
+  font-size: 40px;
+}
+.input-container {
+  width: 350px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: azure;
+  border-radius: 5px;
+}
+.input {
+  border: none;
+  outline: none;
+  background-color: transparent;
+  text-transform: capitalize;
+  font-size: 25px;
+}
+.fa-copy {
+  font-size: 25px;
+  opacity: 0.4;
+}
+.fa-copy:hover {
+  transition: all 0.5s cubic-bezier(0.215, 0.61, 0.355, 1);
+  cursor: pointer;
+  opacity: 1;
+}
+.btn {
+  padding: 8px 16px;
+  font-size: 15px;
+  border-radius: 10px;
+  border: 2px solid green;
+  background-color: transparent;
+  cursor: pointer;
+}
+.btn:active {
+  border: 2px solid green;
+  background-color: green;
+  color: aliceblue;
+  transform: scale(0.9);
+}
+.alert-container {
+  position: fixed;
+  right: -200px;
+  bottom: 20px;
+  background-color: green;
+  color: aliceblue;
+  padding: 10px 20px;
+  font-size: 20px;
+  border-radius: 5px;
+  transition: all 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+.alert-container.active {
+  right: 20px;
+  transition: all 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
