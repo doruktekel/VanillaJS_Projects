@@ -1,0 +1,58 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  height: 100dvh;
+  display: grid;
+  place-items: center;
+  background: #a995fe;
+  background: linear-gradient(135deg, #a995fe, #2bdda2);
+}
+.container {
+  width: 500px;
+  display: flex;
+  flex-direction: column;
+}
+input[type="text"] {
+  font-size: 30px;
+  padding: 15px;
+  border: none;
+  outline: none;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+.ulist-container {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 100%;
+  padding: 15px;
+  font-size: 25px;
+  background-color: antiquewhite;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+.list-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+}
+p {
+  font-size: 30px;
+}
+.btns {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+input[type="checkbox"] {
+  width: 20px;
+  height: 20px;
+}
+i {
+  cursor: pointer;
+}
